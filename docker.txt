@@ -1,0 +1,37 @@
+Docker 
+
+for create container 
+
+cmd - docker pull containerName
+
+cmd for -it 
+docker run -it containerName
+
+for run image 
+cmd is docker run image-name
+
+for create new image 
+docker build -t hello-docker .
+
+docker run -it hello-docker sh
+
+show all container 
+docker ps -a
+
+for stop container 
+docker stop CONTAINER ID first 3 digit
+
+for delete all container
+docker container prune
+
+with this command docker update the code in development env
+-v stand for creating volume
+docker run -p 5173:5173 -v "$(pwd):/app"  react-docker
+
+For published docker images
+firstly login to docker - docker login
+
+command for publish
+ docker tag react-docker rauni00/react-docker
+ then=> docker push rauni00/react-docker
+ 
